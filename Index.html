@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BrickBoss – Mega Klocki</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
+      margin: 0;
+      padding: 0 15px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header {
+      text-align: center;
+      padding: 30px 0 10px;
+    }
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    p.description {
+      text-align: center;
+      font-size: 1.1rem;
+      margin: 0 0 30px 0;
+      font-weight: 500;
+    }
+    .product {
+      border-top: 1px solid #ddd;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .product img {
+      max-width: 120px;
+      height: auto;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+    .product-info {
+      flex-grow: 1;
+      padding-left: 15px;
+      min-width: 180px;
+    }
+    .product-name {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin: 0 0 5px 0;
+    }
+    .price {
+      font-weight: 600;
+      color: #222;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    button.buy-btn {
+      background: #444;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background-color 0.3s ease;
+    }
+    button.buy-btn:hover {
+      background-color: #222;
+    }
+    footer {
+      margin: 40px 0 20px;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #555;
+    }
+    @media (max-width: 480px) {
+      .product {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .product img {
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+      .product-info {
+        padding-left: 0;
+        min-width: auto;
+      }
+      button.buy-btn {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>BrickBoss – Mega Klocki</h1>
+  <p class="description">Sprzedajemy mega klocki! Warto kupować u nas, bo u nas najlepsza jakość!</p>
+</header>
+
+<section class="products">
+
+  <!-- Produkt 1 -->
+  <div class="product">
+    <img src="https://ae01.alicdn.com/kf/Hf47e4c02f1d64ca39c7a3f1a5d9f833cX.jpg" alt="Klocek czerwony" />
+    <div class="product-info">
+      <p class="product-name">Klocek czerwony</p>
+      <p class="price">14,99 zł</p>
+    </div>
+    <button class="buy-btn" onclick="alert('Link do płatności będzie tu wkrótce!')">Kup teraz</button>
+  </div>
+
+  <!-- Produkt 2 -->
+  <div class="product">
+    <img src="https://ae01.alicdn.com/kf/Hf5d1b3d3c4694f96a30a892a141d38d6E.jpg" alt="Klocek niebieski" />
+    <div class="product-info">
+      <p class="product-name">Klocek niebieski</p>
+      <p class="price">14,99 zł</p>
+    </div>
+    <button class="buy-btn" onclick="alert('Link do płatności będzie tu wkrótce!')">Kup teraz</button>
+  </div>
+
+  <!-- Produkt 3 -->
+  <div class="product">
+    <img src="https://ae01.alicdn.com/kf/H9c222c591d5744c386f3a45384253cdd3.jpg" alt="Klocek zielony" />
+    <div class="product-info">
+      <p class="product-name">Klocek zielony</p>
+      <p class="price">14,99 zł</p>
+    </div>
+    <button class="buy-btn" onclick="alert('Link do płatności będzie tu wkrótce!')">Kup teraz</button>
+  </div>
+
+  <!-- Dodaj tu więcej produktów według potrzeby -->
+
+</section>
+
+<footer>
+  © 2025 BrickBoss – Twoje najlepsze klocki online
+</footer>
+
+</body>
+</html>
